@@ -24,7 +24,7 @@ WHERE
 
   AND fare_amount>=2.5
 
-  AND pickup_longitude > -75 #limiting of the distance the taxis travel out
+  AND pickup_longitude > -75 
 
   AND pickup_longitude < -73
 
