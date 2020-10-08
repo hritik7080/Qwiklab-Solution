@@ -1,0 +1,25 @@
+CREATE OR REPLACE MODEL
+
+  taxirides.fare_model OPTIONS (model_type='linear_reg',
+
+    labels=['fare_amount']) AS
+
+WITH
+
+  taxitrips AS (
+
+  SELECT
+
+    *
+
+  FROM
+
+    `taxirides.taxi_training_data`)
+
+SELECT
+
+  *
+
+FROM
+
+  taxitrips
